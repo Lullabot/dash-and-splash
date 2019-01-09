@@ -1,0 +1,16 @@
+include ../_jade/_data.jade
+
+// Course section
+mixin course(title, filename, alt, strava_id, desc)
+    section.course
+        .container
+            .short
+                .map
+                    img(src="images/#{filename}.png" alt="#{alt}")
+            .long
+                h2= title
+                .description= courses[filename]
+                .link
+                    a.icon--strava(href="https://www.strava.com/routes/#{strava_id}") View on Strava
+                .link
+                    a.icon--file(href="files/#{filename}.gpx") Download GPX File

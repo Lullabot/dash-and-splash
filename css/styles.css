@@ -23,6 +23,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3em; }
 
+h2, h3 {
+  color: #E13426; }
+
 a {
   text-decoration: none;
   color: #E13426;
@@ -68,7 +71,7 @@ main {
   position: relative; }
 
 section {
-  padding: 3em 0;
+  padding: 4em 0;
   color: #444;
   position: relative; }
   section:not(last-child):after {
@@ -86,6 +89,21 @@ section {
     margin-bottom: .5em; }
   section .container .description {
     margin-bottom: 1em; }
+  section.info .container .info__box {
+    margin-bottom: 2em; }
+  @media screen and (min-width: 900px) {
+    section.info .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; }
+      section.info .container .info__box {
+        width: 40%;
+        font-size: 0.8em; } }
   @media screen and (min-width: 900px) {
     section .container {
       display: -webkit-box;
@@ -115,13 +133,13 @@ section {
 
 .tagline {
   position: relative;
-  padding-top: 10px; }
+  padding-top: 13px; }
   .tagline:before {
     content: '';
     height: 1px;
     overflow: hidden;
-    background: -webkit-linear-gradient(left, #E13426 0%, transparent 62%);
-    background: linear-gradient(to right, #E13426 0%, transparent 62%);
+    background: -webkit-linear-gradient(left, #E13426 0%, transparent 20em);
+    background: linear-gradient(to right, #E13426 0%, transparent 20em);
     position: absolute;
     width: 50%;
     top: 0;
@@ -138,6 +156,12 @@ section {
   line-height: 1.5em; }
   .highlight a {
     color: #4294f0; }
+
+.promo {
+  font-size: 0.8em;
+  margin-top: 3em;
+  max-width: 42em;
+  font-style: italic; }
 
 .course .map img {
   width: 100%;

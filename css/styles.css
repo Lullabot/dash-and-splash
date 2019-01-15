@@ -45,7 +45,7 @@ p {
   margin: 1em 0; }
 
 header {
-  padding: 2em;
+  padding: 1vw;
   color: white;
   position: relative;
   background-image: url("../images/str.jpg");
@@ -125,11 +125,32 @@ section {
   padding-left: 5%;
   padding-right: 5%; }
 
+.masthead .logo {
+  display: inline-block;
+  width: 100%; }
+.masthead .box--logo {
+  max-width: 150px;
+  margin: 0 auto; }
+@media screen and (min-width: 900px) {
+  .masthead {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .masthead .box--text {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      padding-left: 1.68em; } }
+
 .site-title {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   padding: 2em 5%;
   position: relative;
+  text-align: center;
   z-index: 10; }
+  @media screen and (min-width: 900px) {
+    .site-title {
+      text-align: left; } }
 
 .tagline {
   position: relative;
@@ -138,12 +159,17 @@ section {
     content: '';
     height: 1px;
     overflow: hidden;
-    background: -webkit-linear-gradient(left, #E13426 0%, transparent 20em);
-    background: linear-gradient(to right, #E13426 0%, transparent 20em);
+    background: -webkit-linear-gradient(left, transparent 0, #E13426 50%, transparent 100%);
+    background: linear-gradient(to right, transparent 0, #E13426 50%, transparent 100%);
     position: absolute;
-    width: 50%;
+    width: 100%;
     top: 0;
     left: 0; }
+  @media screen and (min-width: 900px) {
+    .tagline:before {
+      background: -webkit-linear-gradient(left, #E13426 0%, transparent 20em);
+      background: linear-gradient(to right, #E13426 0%, transparent 20em);
+      width: 50%; } }
 
 .highlight {
   padding: 1em;
@@ -161,7 +187,8 @@ section {
   font-size: 0.8em;
   margin-top: 3em;
   max-width: 42em;
-  font-style: italic; }
+  font-style: italic;
+  clear: both; }
 
 .course .map img {
   width: 100%;
@@ -191,6 +218,21 @@ section {
     background-image: url("../images/map_128.png"); }
   .course .link a.icon--strava:before {
     background-image: url("../images/strava_128.png"); }
+
+.button--sign-up {
+  display: inline-block;
+  background: white;
+  border: 2px solid #E13426;
+  border-radius: 1em;
+  padding: .5em 1em .25em 1em;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  -webkit-transition: background-color,color .2s ease-in-out;
+  transition: background-color,color .2s ease-in-out; }
+  .button--sign-up:hover, .button--sign-up:focus {
+    border-width: 2px;
+    background-color: #E13426;
+    color: white; }
 
 footer {
   -ms-flex-negative: 0;

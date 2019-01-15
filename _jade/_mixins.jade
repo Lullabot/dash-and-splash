@@ -14,3 +14,6 @@ mixin course(title, filename, alt, strava_id, desc)
                     a.icon--strava(href="https://www.strava.com/routes/#{strava_id}") View on Strava
                 .link
                     a.icon--file(href="files/#{filename}.gpx") Download GPX File
+
+mixin signup
+    a.button--sign-up(href="https://docs.google.com/spreadsheets/d/1gv6e8yYkJ0FttWc1IYSF5QvScS052mVf1bZYrZRsGvQ/edit#gid=486102889", target="_blank") Sign Up!

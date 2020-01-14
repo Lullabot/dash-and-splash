@@ -308,6 +308,36 @@ section {
   }
 }
 
+p.big-icon {
+  font-size: 2em;
+
+  a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    border-bottom: none;
+    transition: 0.2s all;
+
+    &:focus, &:hover {
+      border-left: 10px solid $lullabot-red;
+      padding-left: 5px;
+    }
+  }
+
+  img {
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  a > * {
+    vertical-align: middle;
+  }
+}
+
 footer {
   flex-shrink: 0;
   border-top: 1px solid #666;

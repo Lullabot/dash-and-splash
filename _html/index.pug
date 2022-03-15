@@ -1,4 +1,4 @@
-include ../_jade/_mixins
+include ../_pug/_mixins
 
 doctype html
 head
@@ -18,17 +18,17 @@ body
         .site-title
             .masthead
                 .box--logo
-                    img.logo(src="images/Lullabuckaroo.png" alt="Lullabuckaroo")
+                    img.logo(src="images/Lullabuckaroo2.png" alt="Lullabuckaroo")
                 .box--text
                     h1 Lullabot Ranch
                     .tagline Dash & Splash 5k, 2 Mile, and 1 Mile Run/Walk
             .promo
-                | The Second Annual Lullabot Ranch Dash & Splash Fun Run/Walk celebrates
+                | The Third Annual Lullabot Ranch Dash & Splash Fun Run/Walk celebrates
                 | health and camaraderie.  There are 3 different courses to choose from,
                 | each starting and ending in front of the Smoke Tree Ranch patio and pool
                 | at Disney Hall.
 
-                h2 Tuesday, January 28 at 1pm - Disney Hall
+                h2 Thursday, April 21 at 7am - Disney Hall
 
     main
         section.info
@@ -36,31 +36,30 @@ body
                 +signup
             .container
                 .info__box
-                    h2 Date and Start Times
-                    h3 Tuesday at 1:15pm
+                    h2 🗓 Date and Start Times
+                    h3 Thursday at 7am
                     .description
-                        | Eat a light lunch, then make your way to the pool deck!  <strong>Start times
-                        | will be staggered</strong> so whether you are walking or running,
+                        | Rise and shine, then make your way to the pool deck!  <strong>Start times
+                        | may be staggered</strong> so whether you are walking or running,
                         | the goal is to have as many people coming to the finish line at
                         | the same time!
 
                 .info__box
-                    h2 Dash & Splash!
+                    h2 🏃‍♂️ Dash & Splash!
                     .description
                         | With three options to choose from, pick the course the best suits
                         | you...literally!  We end at the pool so you can jump right in and
-                        | cool off before the 3pm activities!  Spectators are encouraged to
+                        | cool off before breakfast!  Spectators are encouraged to
                         | cheer and high-five as much as possible.
 
                 .info__box
-                    h2 Course Markings
+                    h2 🔖 Course Markings
                     .description
-                        | The course will be marked in some way, either with chalk or hanging
-                        | markings.  Either way, please familiarize yourself with the course
-                        | before you run.  Stay tuned!
+                        | The course will be marked with signs, but please familiarize yourself with the course
+                        | before you run if you can!
 
                 .info__box
-                    h2 Aid Stations
+                    h2 ⛑ Aid Stations
                     .description
                         | To minimize disruption of the residents, aid stations will not
                         | be placed around the ranch.  Carry water with you if you think
@@ -68,7 +67,7 @@ body
                         | a fun run!
 
                 .info__box
-                    h2 Course Safety
+                    h2 🐍 Course Safety
                     .description
                         | Many of the routes follow roads, so beware of cars. Runner etiquette
                         | is run on the left side of the road (against traffic).  For those
@@ -76,7 +75,7 @@ body
                         | wildlife in the brush.
 
                 .info__box
-                    h2 Volunteers
+                    h2 ✋ Volunteers
                     .description
                         | If you would rather support your fellow 'Bots on their quest, we'll
                         | need a few volunteers to check participants in and mark finishers,
@@ -98,10 +97,10 @@ body
                         a(href="https://www.strava.com/clubs/lullabot", target="_blank")
                             img(src="images/strava_128.png" alt="Strava")
                             span Join the <br> Lullabot Fit Club
-            .info__box
-                | <iframe allowtransparency frameborder='0' height='454' scrolling='no' src='https://www.strava.com/clubs/506700/latest-rides/516fca4fd2e0aaaadbce5004f93206ede74258ca?show_rides=true' width='300'></iframe>
+                .info__box
+                    | <iframe allowtransparency frameborder='0' height='454' scrolling='no' src='https://www.strava.com/clubs/506700/latest-rides/516fca4fd2e0aaaadbce5004f93206ede74258ca?show_rides=true' width='300'></iframe>
         +course("1 Mile Course", '1mile', "Map of the 1 mile course.", '16728678')
         +course("2 Mile Course", '2mile', "Map of the 2 mile course.", '16728878')
         +course("5k Course", '5k', "Map of the 5k course.", '16728707')
     footer
-        | Copyright &copy; 2020 &bull; Lullabot - All Rights Reserved
+        | Copyright &copy; 2022 &bull; Lullabot - All Rights Reserved

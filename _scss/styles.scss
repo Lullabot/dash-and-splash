@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Tajawal');
-@import "bourbon/bourbon";
+//@import "bourbon/bourbon";
 @import "tools/vars";
 
 * {
   margin: 0;
   font-family: $font-secondary;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -59,12 +60,11 @@ p {
 }
 
 header {
-  padding: 1vw;
   color: white;
   position: relative;
 
-  background-image: url('../images/str.jpg');
-  background-position: bottom;
+  background-image: url('../images/str2.jpg');
+  background-position: top;
   background-size: cover;
   background-attachment: fixed;
 
@@ -76,7 +76,7 @@ header {
     top: 0;
     left: 0;
     position: absolute;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
     z-index: 5;
   }
 }
@@ -171,29 +171,43 @@ section {
   }
 
   .box--logo {
-    max-width: 150px;
+    display: inline-block;
+    max-width: 200px;
+    max-height: 200px;
+    background-color: white;
+    border: 2px solid $lullabot-red;
+    border-radius: 100%;
     margin: 0 auto;
+    padding: .75em;
+    vertical-align: middle;
   }
 
   @media screen and (min-width: 900px) {
-    display: flex;
+    //display: flex;
 
     .box--text {
-      flex-grow: 1;
+      //flex-grow: 1;
       padding-left: 1.68em;
+      text-align: left;
+      display: inline-block;
+      vertical-align: middle;
     }
   }
 }
 
 .site-title {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
-  padding: 2em $content-gutter;
+  padding: 3em $content-gutter;
   position: relative;
   text-align: center;
   z-index: 10;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media screen and (min-width: 900px) {
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -215,7 +229,7 @@ section {
   @media screen and (min-width: 900px) {
     &:before {
       background: linear-gradient(to right, $lullabot-red 0%, transparent 20em);
-      width: 50%;
+      //width: 50%;
     }
   }
 }
@@ -236,11 +250,16 @@ section {
 }
 
 .promo {
+  text-align: center;
   font-size: 0.8em;
-  margin-top: 3em;
+  margin: 3em auto 0 auto;
   max-width: 42em;
   font-style: italic;
   clear: both;
+
+  h2 {
+    margin: 2em auto 0 auto;
+  }
 }
 
 .course {
@@ -295,7 +314,7 @@ section {
   display: inline-block;
   background: white;
   border: 2px solid $lullabot-red;
-  border-radius: 1em;
+  border-radius: .25em;
   padding: .5em 1em .25em 1em;
   font-size: 1.5em;
   margin-bottom: 2em;

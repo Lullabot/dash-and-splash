@@ -19,23 +19,23 @@
       "oF" : 2,
       "oS" : 0
     },
-    "\/_jade\/_data.pug" : {
+    "\/_pug\/_data.pug" : {
       "cB" : 0,
       "cOD" : 1,
       "ft" : 512,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/_jade\/_data.html",
+      "oAP" : "\/_pug\/_data.html",
       "oF" : 0,
       "oS" : 0
     },
-    "\/_jade\/_mixins.pug" : {
+    "\/_pug\/_mixins.pug" : {
       "cB" : 0,
       "cOD" : 1,
       "ft" : 512,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/_jade\/_mixins.html",
+      "oAP" : "\/_pug\/_mixins.html",
       "oF" : 0,
       "oS" : 0
     },
@@ -3990,6 +3990,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/Lullabuckaroo2.png" : {
+      "ft" : 32768,
+      "iS" : 26752,
+      "oA" : 0,
+      "oAP" : "\/images\/Lullabuckaroo2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/map_128.png" : {
       "ft" : 32768,
       "iS" : 21752,
@@ -4009,6 +4022,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/images\/str.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/str2.jpg" : {
+      "ft" : 16384,
+      "iS" : 6810101,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/str2.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -4036,6 +4062,28 @@
       "oA" : 0,
       "oAP" : "\/index.html",
       "oF" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
+      "oF" : 0
+    },
+    "\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/package-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
     },
     "\/README.md" : {
       "cB" : 0,

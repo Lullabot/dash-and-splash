@@ -9,7 +9,7 @@
   ],
   "creatorBuild" : "34214",
   "files" : {
-    "\/_html\/index.jade" : {
+    "\/_html\/index.pug" : {
       "cB" : 0,
       "cOD" : 1,
       "ft" : 512,
@@ -19,7 +19,7 @@
       "oF" : 2,
       "oS" : 0
     },
-    "\/_jade\/_data.jade" : {
+    "\/_jade\/_data.pug" : {
       "cB" : 0,
       "cOD" : 1,
       "ft" : 512,
@@ -29,7 +29,7 @@
       "oF" : 0,
       "oS" : 0
     },
-    "\/_jade\/_mixins.jade" : {
+    "\/_jade\/_mixins.pug" : {
       "cB" : 0,
       "cOD" : 1,
       "ft" : 512,

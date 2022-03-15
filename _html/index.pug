@@ -1,0 +1,107 @@
+include ../_jade/_mixins
+
+doctype html
+head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Third Annual Lullabot Ranch Dash & Splash 5k, 2 Mile, and 1 Mile Run/Walk
+    link(rel="stylesheet" type="text/css" href="css/styles.css")
+    link(rel="apple-touch-icon", sizes="180x180", href="images/favicon/apple-touch-icon.png")
+    link(rel="icon", type="image/png", sizes="192x192",  href="images/favicon/android-chrome-192x192.png")
+    link(rel="icon", type="image/png", sizes="512x512",  href="images/favicon/android-chrome-512x512.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="images/favicon/favicon-32x32.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="images/favicon/favicon-16x16.png")
+    link(rel="icon", type="image/ico", sizes="16x16", href="images/favicon/favicon.ico")
+    link(rel="manifest", href="images/favicon/site.webmanifest")
+    meta(name="theme-color", content="#ffffff")
+body
+    header
+        .site-title
+            .masthead
+                .box--logo
+                    img.logo(src="images/Lullabuckaroo.png" alt="Lullabuckaroo")
+                .box--text
+                    h1 Lullabot Ranch
+                    .tagline Dash & Splash 5k, 2 Mile, and 1 Mile Run/Walk
+            .promo
+                | The Second Annual Lullabot Ranch Dash & Splash Fun Run/Walk celebrates
+                | health and camaraderie.  There are 3 different courses to choose from,
+                | each starting and ending in front of the Smoke Tree Ranch patio and pool
+                | at Disney Hall.
+
+                h2 Tuesday, January 28 at 1pm - Disney Hall
+
+    main
+        section.info
+            .container
+                +signup
+            .container
+                .info__box
+                    h2 Date and Start Times
+                    h3 Tuesday at 1:15pm
+                    .description
+                        | Eat a light lunch, then make your way to the pool deck!  <strong>Start times
+                        | will be staggered</strong> so whether you are walking or running,
+                        | the goal is to have as many people coming to the finish line at
+                        | the same time!
+
+                .info__box
+                    h2 Dash & Splash!
+                    .description
+                        | With three options to choose from, pick the course the best suits
+                        | you...literally!  We end at the pool so you can jump right in and
+                        | cool off before the 3pm activities!  Spectators are encouraged to
+                        | cheer and high-five as much as possible.
+
+                .info__box
+                    h2 Course Markings
+                    .description
+                        | The course will be marked in some way, either with chalk or hanging
+                        | markings.  Either way, please familiarize yourself with the course
+                        | before you run.  Stay tuned!
+
+                .info__box
+                    h2 Aid Stations
+                    .description
+                        | To minimize disruption of the residents, aid stations will not
+                        | be placed around the ranch.  Carry water with you if you think
+                        | you'll need it.  Take into account the heat, and remember, it's
+                        | a fun run!
+
+                .info__box
+                    h2 Course Safety
+                    .description
+                        | Many of the routes follow roads, so beware of cars. Runner etiquette
+                        | is run on the left side of the road (against traffic).  For those
+                        | on the 5k course, ensure you have plenty of water and watch for
+                        | wildlife in the brush.
+
+                .info__box
+                    h2 Volunteers
+                    .description
+                        | If you would rather support your fellow 'Bots on their quest, we'll
+                        | need a few volunteers to check participants in and mark finishers,
+                        | take photos, hand out water, and cheer everyone on as the approach
+                        | the final stretch and cross the finish line.
+
+
+            .container
+                +signup
+
+        section.info
+            .container
+                .info__box
+                    h2 Strava
+                    p We use Strava to map the routs.  Strava is a free community of active people.  You can use just about any GPS enabled device to sync your activities, use their free app, or manually enter them.
+                    p You don't have to use Strava, but we do have a Lullabot Fit Club where we share our runs, rides, and rows, and it's always more fun with more people to give you kudos.
+
+                    p.big-icon
+                        a(href="https://www.strava.com/clubs/lullabot", target="_blank")
+                            img(src="images/strava_128.png" alt="Strava")
+                            span Join the <br> Lullabot Fit Club
+            .info__box
+                | <iframe allowtransparency frameborder='0' height='454' scrolling='no' src='https://www.strava.com/clubs/506700/latest-rides/516fca4fd2e0aaaadbce5004f93206ede74258ca?show_rides=true' width='300'></iframe>
+        +course("1 Mile Course", '1mile', "Map of the 1 mile course.", '16728678')
+        +course("2 Mile Course", '2mile', "Map of the 2 mile course.", '16728878')
+        +course("5k Course", '5k', "Map of the 5k course.", '16728707')
+    footer
+        | Copyright &copy; 2020 &bull; Lullabot - All Rights Reserved
